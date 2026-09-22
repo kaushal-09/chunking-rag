@@ -1,0 +1,32 @@
+{
+  "n_questions": 2837,
+  "n_gold_pages_needed": 4274,
+  "n_gold_pages_found": 4274,
+  "gold_page_coverage": 1.0,
+  "corpus_chars": 82259319,
+  "corpus_chars_per_page": 19246,
+  "est_tokens": 20564830,
+  "est_chunks_at_128": 160663,
+  "est_chunks_at_256": 80331,
+  "est_index_mb": {
+    "weak_384d_at_128": 235.3,
+    "strong_768d_at_128": 470.7
+  },
+  "per_split": {
+    "dev": {
+      "n": 200,
+      "answer_in_gold_page": 0.98,
+      "n_without_any_gold_page_in_corpus": 0
+    },
+    "test": {
+      "n": 800,
+      "answer_in_gold_page": 0.9888,
+      "n_without_any_gold_page_in_corpus": 0
+    },
+    "all": {
+      "n": 2837,
+      "answer_in_gold_page": 0.9767,
+      "n_without_any_gold_page_in_corpus": 0
+    }
+  }
+}

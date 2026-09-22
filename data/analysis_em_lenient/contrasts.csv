@@ -1,0 +1,13 @@
+budget,embedder,metric,a,b,mean_a,mean_b,diff,ci_low,ci_high,p_bootstrap,n,mde,reject_holm
+1000,strong,em_lenient,fixed_128,fixed_256,0.4462,0.4462,0.0,-0.0312,0.0312,1.0,800,0.0449,False
+1000,strong,em_lenient,fixed_128,recursive_256,0.4462,0.4675,-0.0213,-0.0525,0.01,0.1936,800,0.0444,False
+1000,strong,em_lenient,fixed_128,semantic,0.4462,0.4363,0.01,-0.0187,0.04,0.5342,800,0.0417,False
+1000,strong,em_lenient,fixed_256,recursive_256,0.4462,0.4675,-0.0213,-0.0525,0.0088,0.1796,800,0.0441,False
+1000,strong,em_lenient,fixed_256,semantic,0.4462,0.4363,0.01,-0.02,0.0413,0.5672,800,0.044,False
+1000,strong,em_lenient,recursive_256,semantic,0.4675,0.4363,0.0312,0.0013,0.0625,0.049,800,0.0435,False
+1000,weak,em_lenient,fixed_128,fixed_256,0.4288,0.4263,0.0025,-0.0288,0.0338,0.9044,800,0.0443,False
+1000,weak,em_lenient,fixed_128,recursive_256,0.4288,0.44,-0.0112,-0.04,0.0187,0.4862,800,0.043,False
+1000,weak,em_lenient,fixed_128,semantic,0.4288,0.4213,0.0075,-0.0238,0.0387,0.659,800,0.0443,False
+1000,weak,em_lenient,fixed_256,recursive_256,0.4263,0.44,-0.0138,-0.0437,0.0163,0.399,800,0.043,False
+1000,weak,em_lenient,fixed_256,semantic,0.4263,0.4213,0.005,-0.0262,0.0375,0.7846,800,0.0454,False
+1000,weak,em_lenient,recursive_256,semantic,0.44,0.4213,0.0187,-0.01,0.0475,0.2144,800,0.0413,False

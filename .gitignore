@@ -1,0 +1,38 @@
+# large and regenerable (scripts 01 and 02 rebuild them)
+data/corpus/pages.jsonl
+data/corpus/pages.jsonl.*
+data/chunks/*.jsonl
+data/index/*.faiss
+.hf-cache/
+
+# local console logs (they contain machine paths)
+logs/
+
+# outputs of the offline rehearsal and the timing probe
+data_smoke/
+data/runs_probe/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# latex build output; the poster is built from source on Overleaf
+poster/*.aux
+poster/*.bbl
+poster/*.blg
+poster/*.log
+poster/*.out
+poster/*.fls
+poster/*.fdb_latexmk
+poster/*.synctex.gz
+poster/main.pdf
+poster/appendix.pdf
+
+# the signed declaration is personal and never goes online
+**/declaration*.pdf
+
+*.zip
+
+# local helper that creates the GitHub repo and the Overleaf zip
+publish.ps1

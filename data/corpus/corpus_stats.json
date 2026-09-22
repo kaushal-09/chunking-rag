@@ -1,0 +1,16 @@
+{
+  "n_questions": 2837,
+  "n_gold_pages_needed": 4274,
+  "n_pages_in_corpus": 4274,
+  "n_questions_with_a_gold_page_in_corpus": 2837,
+  "per_split": {
+    "dev": {
+      "n": 200,
+      "n_with_a_gold_page_in_corpus": 200
+    },
+    "test": {
+      "n": 800,
+      "n_with_a_gold_page_in_corpus": 800
+    }
+  }
+}

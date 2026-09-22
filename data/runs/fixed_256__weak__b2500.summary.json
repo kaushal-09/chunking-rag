@@ -1,0 +1,29 @@
+{
+  "run_id": "fixed_256__weak__b2500",
+  "chunker": "fixed_256",
+  "chunkset_id": "fixed_256",
+  "embedder": "weak",
+  "budget": 2500,
+  "split": "test",
+  "n_questions": 800,
+  "generated": false,
+  "answer_recall": 0.9025,
+  "page_hit": 0.98,
+  "page_precision": 0.5864,
+  "em": null,
+  "f1": null,
+  "abstention_rate": null,
+  "context_ok_answer_wrong": null,
+  "n_chunks_used_mean": 9.1713,
+  "n_tokens_used_mean": 2372.2087,
+  "n_tokens_actual_mean": 2370.63,
+  "budget_utilisation_mean": 0.9489,
+  "retrieval_seconds": 0.8,
+  "generation": null,
+  "design": {
+    "n_candidates": 64,
+    "budget_policy": "stop",
+    "max_chunk_tokens": 256,
+    "seed": 13
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "metric": "answer_recall",
+  "budget": 1000,
+  "pair": [
+    "semantic",
+    "fixed_128"
+  ],
+  "weak_effect": {
+    "diff": -0.0213,
+    "ci": [
+      -0.045,
+      0.0025
+    ],
+    "p": 0.0804,
+    "mde": 0.0334
+  },
+  "strong_effect": {
+    "diff": -0.025,
+    "ci": [
+      -0.0437,
+      -0.005
+    ],
+    "p": 0.0134,
+    "mde": 0.0275
+  },
+  "interaction": {
+    "difference_in_differences": 0.0037,
+    "ci": [
+      -0.025,
+      0.0325
+    ],
+    "p": 0.8368,
+    "significant": false,
+    "n": 800,
+    "mde": 0.0407
+  },
+  "descriptive_spread_max_minus_min": {
+    "strong": {
+      "best": "fixed_128",
+      "worst": "semantic",
+      "spread": 0.025
+    },
+    "weak": {
+      "best": "fixed_128",
+      "worst": "fixed_256",
+      "spread": 0.0375
+    }
+  }
+}

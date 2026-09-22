@@ -1,0 +1,9 @@
+{
+  "chunkset_id": "fixed_128",
+  "embedder_key": "strong",
+  "model_name": "BAAI/bge-base-en-v1.5",
+  "dim": 768,
+  "n_vectors": 143674,
+  "backend": "faiss",
+  "chunks_path": "data/chunks/fixed_128.jsonl"
+}

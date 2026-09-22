@@ -1,0 +1,64 @@
+% Appendix to the poster: references + declaration of academic integrity.
+% Compile with pdfLaTeX. In Overleaf: Menu -> Main document -> appendix.tex.
+%
+% The signed declaration: download the official form from the University of
+% Trier website (link in the poster guidelines), sign it, scan it to PDF, and
+% upload it next to this file as  declaration_signed.pdf  -- it is inserted
+% automatically as the last page(s). Never commit it to the public repository.
+\documentclass[10pt]{article}
+
+\usepackage[a4paper, margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{times}            % scalable roman + Courier typewriter everywhere; helvet takes sans
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage[numbers, sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{HTML}{0F2C55}
+\setlength{\bibsep}{3pt}
+\pagestyle{plain}
+
+\begin{document}
+\RaggedRight
+
+{\color{navy}\LARGE\bfseries Appendix\par}
+\vspace{2mm}
+{\large Retrieval isn't the bottleneck, the reader is: does embedder capacity
+moderate the effect of chunking in RAG?\par}
+\vspace{3mm}
+Kaushal Oza (s4kaozaa@uni-trier.de) and
+Varshini Naguvanahalli Govindaraju (s4vanagu@uni-trier.de)\\
+University of Trier
+
+\vspace{6mm}
+This appendix accompanies the poster. It contains the complete list of
+sources consulted and the signed declaration of academic integrity. The
+bracketed numbers on the poster refer to the list below. Code, per-question
+results of all 16 runs and the analysis are in the repository linked on the
+poster.
+
+\renewcommand{\refname}{References}
+\nocite{*}
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+% ------------------------------------------------- declaration of integrity
+\clearpage
+\IfFileExists{declaration_signed.pdf}{%
+  \includepdf[pages=-]{declaration_signed.pdf}%
+}{%
+  \section*{Declaration of academic integrity}
+  \fcolorbox{red}{white}{\parbox{0.92\linewidth}{\RaggedRight\vspace{2mm}
+  \textbf{Missing: signed declaration.} Download the official declaration of
+  academic integrity from the University of Trier website, sign it, scan it
+  to PDF and upload it as \texttt{declaration\_signed.pdf} next to
+  \texttt{appendix.tex}. Recompile and this page is replaced by your signed
+  form. Do not submit the appendix while this box is visible.\vspace{2mm}}}
+}
+
+\end{document}

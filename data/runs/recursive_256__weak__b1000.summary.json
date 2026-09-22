@@ -1,0 +1,36 @@
+{
+  "run_id": "recursive_256__weak__b1000",
+  "chunker": "recursive_256",
+  "chunkset_id": "recursive_256",
+  "embedder": "weak",
+  "budget": 1000,
+  "split": "test",
+  "n_questions": 800,
+  "generated": true,
+  "answer_recall": 0.82,
+  "page_hit": 0.9563,
+  "page_precision": 0.7142,
+  "em": 0.3775,
+  "f1": 0.4617,
+  "abstention_rate": 0.2213,
+  "context_ok_answer_wrong": 0.445,
+  "n_chunks_used_mean": 4.3937,
+  "n_tokens_used_mean": 890.325,
+  "n_tokens_actual_mean": 887.1838,
+  "budget_utilisation_mean": 0.8903,
+  "retrieval_seconds": 0.8,
+  "generation": {
+    "n_prompts": 800,
+    "seconds": 2476.8,
+    "prompts_per_second": 0.32,
+    "new_tokens_per_second": 2.9,
+    "batch_size": 4,
+    "logits_kwarg": "logits_to_keep"
+  },
+  "design": {
+    "n_candidates": 64,
+    "budget_policy": "stop",
+    "max_chunk_tokens": 256,
+    "seed": 13
+  }
+}

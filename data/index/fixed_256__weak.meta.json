@@ -1,0 +1,9 @@
+{
+  "chunkset_id": "fixed_256",
+  "embedder_key": "weak",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dim": 384,
+  "n_vectors": 72910,
+  "backend": "faiss",
+  "chunks_path": "data/chunks/fixed_256.jsonl"
+}

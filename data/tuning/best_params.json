@@ -1,0 +1,11 @@
+{
+  "recursive_256": {
+    "min_fill_ratio": 0.75
+  },
+  "semantic__weak": {
+    "percentile": 95
+  },
+  "semantic__strong": {
+    "percentile": 80
+  }
+}

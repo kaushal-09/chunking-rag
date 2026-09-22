@@ -1,0 +1,36 @@
+{
+  "run_id": "semantic__weak__b1000",
+  "chunker": "semantic",
+  "chunkset_id": "semantic__weak",
+  "embedder": "weak",
+  "budget": 1000,
+  "split": "test",
+  "n_questions": 800,
+  "generated": true,
+  "answer_recall": 0.8137,
+  "page_hit": 0.95,
+  "page_precision": 0.714,
+  "em": 0.3675,
+  "f1": 0.4561,
+  "abstention_rate": 0.2175,
+  "context_ok_answer_wrong": 0.4462,
+  "n_chunks_used_mean": 4.3887,
+  "n_tokens_used_mean": 883.535,
+  "n_tokens_actual_mean": 880.3675,
+  "budget_utilisation_mean": 0.8835,
+  "retrieval_seconds": 0.9,
+  "generation": {
+    "n_prompts": 800,
+    "seconds": 2476.3,
+    "prompts_per_second": 0.32,
+    "new_tokens_per_second": 2.9,
+    "batch_size": 4,
+    "logits_kwarg": "logits_to_keep"
+  },
+  "design": {
+    "n_candidates": 64,
+    "budget_policy": "stop",
+    "max_chunk_tokens": 256,
+    "seed": 13
+  }
+}

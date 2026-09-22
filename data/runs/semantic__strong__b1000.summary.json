@@ -1,0 +1,36 @@
+{
+  "run_id": "semantic__strong__b1000",
+  "chunker": "semantic",
+  "chunkset_id": "semantic__strong",
+  "embedder": "strong",
+  "budget": 1000,
+  "split": "test",
+  "n_questions": 800,
+  "generated": true,
+  "answer_recall": 0.86,
+  "page_hit": 0.9663,
+  "page_precision": 0.6699,
+  "em": 0.3675,
+  "f1": 0.4671,
+  "abstention_rate": 0.1812,
+  "context_ok_answer_wrong": 0.4938,
+  "n_chunks_used_mean": 5.7912,
+  "n_tokens_used_mean": 899.7413,
+  "n_tokens_actual_mean": 895.125,
+  "budget_utilisation_mean": 0.8997,
+  "retrieval_seconds": 2.7,
+  "generation": {
+    "n_prompts": 800,
+    "seconds": 2540.1,
+    "prompts_per_second": 0.31,
+    "new_tokens_per_second": 3.2,
+    "batch_size": 4,
+    "logits_kwarg": "logits_to_keep"
+  },
+  "design": {
+    "n_candidates": 64,
+    "budget_policy": "stop",
+    "max_chunk_tokens": 256,
+    "seed": 13
+  }
+}

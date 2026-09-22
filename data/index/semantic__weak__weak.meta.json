@@ -1,0 +1,9 @@
+{
+  "chunkset_id": "semantic__weak",
+  "embedder_key": "weak",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dim": 384,
+  "n_vectors": 93408,
+  "backend": "faiss",
+  "chunks_path": "data/chunks/semantic__weak.jsonl"
+}

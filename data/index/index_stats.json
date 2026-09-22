@@ -1,0 +1,82 @@
+[
+  {
+    "chunkset_id": "fixed_128",
+    "embedder_key": "strong",
+    "model_name": "BAAI/bge-base-en-v1.5",
+    "dim": 768,
+    "n_vectors": 143674,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/fixed_128.jsonl",
+    "seconds": 1646.1
+  },
+  {
+    "chunkset_id": "fixed_128",
+    "embedder_key": "weak",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "dim": 384,
+    "n_vectors": 143674,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/fixed_128.jsonl",
+    "seconds": 272.6
+  },
+  {
+    "chunkset_id": "fixed_256",
+    "embedder_key": "strong",
+    "model_name": "BAAI/bge-base-en-v1.5",
+    "dim": 768,
+    "n_vectors": 72910,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/fixed_256.jsonl",
+    "seconds": 1610.0
+  },
+  {
+    "chunkset_id": "fixed_256",
+    "embedder_key": "weak",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "dim": 384,
+    "n_vectors": 72910,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/fixed_256.jsonl",
+    "seconds": 277.6
+  },
+  {
+    "chunkset_id": "recursive_256",
+    "embedder_key": "strong",
+    "model_name": "BAAI/bge-base-en-v1.5",
+    "dim": 768,
+    "n_vectors": 92567,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/recursive_256.jsonl",
+    "seconds": 2032.9
+  },
+  {
+    "chunkset_id": "recursive_256",
+    "embedder_key": "weak",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "dim": 384,
+    "n_vectors": 92567,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/recursive_256.jsonl",
+    "seconds": 347.9
+  },
+  {
+    "chunkset_id": "semantic__strong",
+    "embedder_key": "strong",
+    "model_name": "BAAI/bge-base-en-v1.5",
+    "dim": 768,
+    "n_vectors": 134289,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/semantic__strong.jsonl",
+    "seconds": 3019.1
+  },
+  {
+    "chunkset_id": "semantic__weak",
+    "embedder_key": "weak",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "dim": 384,
+    "n_vectors": 93408,
+    "backend": "faiss",
+    "chunks_path": "data/chunks/semantic__weak.jsonl",
+    "seconds": 343.5
+  }
+]

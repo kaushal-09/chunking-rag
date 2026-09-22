@@ -1,0 +1,108 @@
+[
+  {
+    "chunkset_id": "fixed_128",
+    "chunker": "fixed_128",
+    "embedder_for_boundaries": null,
+    "params": {
+      "target_tokens": 128,
+      "overlap_tokens": 0,
+      "max_tokens": 128,
+      "min_chunk_tokens": 0
+    },
+    "n_pages": 4274,
+    "n_chunks": 143674,
+    "chunks_per_page": 33.62,
+    "tokens_mean": 126.1,
+    "tokens_median": 128.0,
+    "tokens_p10": 128.0,
+    "tokens_p90": 128.0,
+    "tokens_max": 128,
+    "budget_tokens_mean": 130.8,
+    "seconds": 142.0
+  },
+  {
+    "chunkset_id": "fixed_256",
+    "chunker": "fixed_256",
+    "embedder_for_boundaries": null,
+    "params": {
+      "target_tokens": 256,
+      "overlap_tokens": 0,
+      "max_tokens": 256,
+      "min_chunk_tokens": 0
+    },
+    "n_pages": 4274,
+    "n_chunks": 72910,
+    "chunks_per_page": 17.06,
+    "tokens_mean": 248.5,
+    "tokens_median": 256.0,
+    "tokens_p10": 256.0,
+    "tokens_p90": 256.0,
+    "tokens_max": 256,
+    "budget_tokens_mean": 257.5,
+    "seconds": 129.8
+  },
+  {
+    "chunkset_id": "recursive_256",
+    "chunker": "recursive_256",
+    "embedder_for_boundaries": null,
+    "params": {
+      "target_tokens": 256,
+      "min_fill_ratio": 0.75,
+      "strong_separator_level": 1,
+      "max_tokens": 256,
+      "min_chunk_tokens": 32
+    },
+    "n_pages": 4274,
+    "n_chunks": 92567,
+    "chunks_per_page": 21.66,
+    "tokens_mean": 195.7,
+    "tokens_median": 202.0,
+    "tokens_p10": 134.0,
+    "tokens_p90": 244.0,
+    "tokens_max": 256,
+    "budget_tokens_mean": 202.6,
+    "seconds": 140.3
+  },
+  {
+    "chunkset_id": "semantic__strong",
+    "chunker": "semantic",
+    "embedder_for_boundaries": "strong",
+    "params": {
+      "percentile": 80.0,
+      "buffer_size": 1,
+      "max_tokens": 256,
+      "min_chunk_tokens": 32
+    },
+    "n_pages": 4274,
+    "n_chunks": 134289,
+    "chunks_per_page": 31.42,
+    "tokens_mean": 134.9,
+    "tokens_median": 121.0,
+    "tokens_p10": 48.0,
+    "tokens_p90": 242.0,
+    "tokens_max": 256,
+    "budget_tokens_mean": 139.7,
+    "seconds": 9816.0
+  },
+  {
+    "chunkset_id": "semantic__weak",
+    "chunker": "semantic",
+    "embedder_for_boundaries": "weak",
+    "params": {
+      "percentile": 95.0,
+      "buffer_size": 1,
+      "max_tokens": 256,
+      "min_chunk_tokens": 32
+    },
+    "n_pages": 4274,
+    "n_chunks": 93408,
+    "chunks_per_page": 21.85,
+    "tokens_mean": 193.9,
+    "tokens_median": 229.0,
+    "tokens_p10": 70.0,
+    "tokens_p90": 252.0,
+    "tokens_max": 256,
+    "budget_tokens_mean": 200.8,
+    "seconds": 3827.3
+  }
+]

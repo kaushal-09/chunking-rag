@@ -1,0 +1,17 @@
+chunker,embedder,budget,answer_recall,em,em_given_context_has_answer,em_given_context_lacks_answer,abstained_given_context_has_answer,abstained_given_context_lacks_answer,hallucinated_without_context,n_context_has_answer
+fixed_128,strong,1000,0.885,0.3812,0.4294,0.0109,0.1568,0.413,0.5761,708
+fixed_256,strong,1000,0.8725,0.3725,0.4255,0.0098,0.1676,0.4412,0.549,698
+recursive_256,strong,1000,0.875,0.3975,0.4543,0.0,0.16,0.34,0.66,700
+semantic,strong,1000,0.86,0.3675,0.4259,0.0089,0.1555,0.3393,0.6518,688
+fixed_128,weak,1000,0.835,0.3688,0.4371,0.0227,0.1961,0.4394,0.5379,668
+fixed_256,weak,1000,0.7975,0.365,0.4545,0.0123,0.1818,0.4568,0.5309,638
+recursive_256,weak,1000,0.82,0.3775,0.4573,0.0139,0.1646,0.4792,0.5069,656
+semantic,weak,1000,0.8137,0.3675,0.4516,0.0,0.149,0.5168,0.4832,651
+fixed_128,strong,2500,0.93,,,,,,0.0,744
+fixed_256,strong,2500,0.9363,,,,,,0.0,749
+recursive_256,strong,2500,0.9387,,,,,,0.0,751
+semantic,strong,2500,0.925,,,,,,0.0,740
+fixed_128,weak,2500,0.9125,,,,,,0.0,730
+fixed_256,weak,2500,0.9025,,,,,,0.0,722
+recursive_256,weak,2500,0.9,,,,,,0.0,720
+semantic,weak,2500,0.8962,,,,,,0.0,717

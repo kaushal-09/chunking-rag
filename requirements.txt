@@ -1,0 +1,20 @@
+# Core (step 1 -- pure Python, no GPU needed)
+numpy>=1.26
+
+# Pipeline (steps 2-5)
+datasets>=2.19          # KILT-NQ + KILT wikipedia
+transformers>=4.44      # tokenizers + Qwen2.5
+sentence-transformers>=3.0
+faiss-cpu>=1.8          # ~100k vectors: flat IP on CPU is plenty
+pandas>=2.2
+matplotlib>=3.8        # figures for the poster
+tabulate>=0.9          # pandas .to_markdown() in the analysis report
+tqdm>=4.66
+accelerate>=0.33
+bitsandbytes>=0.43      # 4-bit NF4; Windows wheels exist from 0.43 on
+
+# torch is deliberately NOT pinned here. On Windows the PyPI wheel is
+# CPU-only, which would silently run the whole study on the CPU. Install the
+# CUDA build first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# then verify: python -c "import torch; print(torch.cuda.is_available())"

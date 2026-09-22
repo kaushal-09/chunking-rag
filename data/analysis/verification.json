@@ -1,0 +1,1298 @@
+{
+  "passed": 258,
+  "total": 258,
+  "failures": [],
+  "warnings": [],
+  "rows": [
+    {
+      "check": "config.SEED",
+      "status": "ok",
+      "detail": "13"
+    },
+    {
+      "check": "config.N_DEV",
+      "status": "ok",
+      "detail": "200"
+    },
+    {
+      "check": "config.N_TEST",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "config.MAX_CHUNK_TOKENS",
+      "status": "ok",
+      "detail": "256"
+    },
+    {
+      "check": "config.CHUNK_OVERLAP",
+      "status": "ok",
+      "detail": "0"
+    },
+    {
+      "check": "config.N_CANDIDATES",
+      "status": "ok",
+      "detail": "64"
+    },
+    {
+      "check": "config.BUDGET_POLICY",
+      "status": "ok",
+      "detail": "'stop'"
+    },
+    {
+      "check": "config.BUDGETS",
+      "status": "ok",
+      "detail": "(1000, 2500)"
+    },
+    {
+      "check": "config.GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "(1000,)"
+    },
+    {
+      "check": "config.GENERATOR_MODEL",
+      "status": "ok",
+      "detail": "'Qwen/Qwen2.5-3B-Instruct'"
+    },
+    {
+      "check": "config.GEN_MAX_NEW_TOKENS",
+      "status": "ok",
+      "detail": "32"
+    },
+    {
+      "check": "config.GEN_TEMPERATURE",
+      "status": "ok",
+      "detail": "0.0"
+    },
+    {
+      "check": "config.GEN_LOAD_IN_4BIT",
+      "status": "ok",
+      "detail": "True"
+    },
+    {
+      "check": "config.CHUNK_TOKENIZER",
+      "status": "ok",
+      "detail": "'bert-base-uncased'"
+    },
+    {
+      "check": "config.N_BOOTSTRAP",
+      "status": "ok",
+      "detail": "10000"
+    },
+    {
+      "check": "four chunkers",
+      "status": "ok",
+      "detail": "fixed_128, fixed_256, recursive_256, semantic"
+    },
+    {
+      "check": "two embedders",
+      "status": "ok",
+      "detail": "weak, strong"
+    },
+    {
+      "check": "16-run matrix",
+      "status": "ok",
+      "detail": "16 runs"
+    },
+    {
+      "check": "question ids unique",
+      "status": "ok",
+      "detail": "2837 rows, 2837 unique"
+    },
+    {
+      "check": "every question has an answer",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "every question has gold provenance",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "dev size",
+      "status": "ok",
+      "detail": "200"
+    },
+    {
+      "check": "test size",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "dev and test disjoint",
+      "status": "ok",
+      "detail": "0 shared"
+    },
+    {
+      "check": "split ids all present in questions.jsonl",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "dev split reproducible from seed",
+      "status": "ok",
+      "detail": "seed=13"
+    },
+    {
+      "check": "test split reproducible from seed",
+      "status": "ok",
+      "detail": "seed=13"
+    },
+    {
+      "check": "split column agrees with splits.json",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "every needed gold page was retrieved",
+      "status": "ok",
+      "detail": "4274/4274"
+    },
+    {
+      "check": "no test question lost its gold page",
+      "status": "ok",
+      "detail": "800/800"
+    },
+    {
+      "check": "fixed_128: cap holds",
+      "status": "ok",
+      "detail": "max=128 <= 256"
+    },
+    {
+      "check": "fixed_128: own cap within the global cap",
+      "status": "ok",
+      "detail": "128 <= 256"
+    },
+    {
+      "check": "fixed_128: zero overlap",
+      "status": "ok",
+      "detail": "0"
+    },
+    {
+      "check": "fixed_256: cap holds",
+      "status": "ok",
+      "detail": "max=256 <= 256"
+    },
+    {
+      "check": "fixed_256: own cap within the global cap",
+      "status": "ok",
+      "detail": "256 <= 256"
+    },
+    {
+      "check": "fixed_256: zero overlap",
+      "status": "ok",
+      "detail": "0"
+    },
+    {
+      "check": "recursive_256: cap holds",
+      "status": "ok",
+      "detail": "max=256 <= 256"
+    },
+    {
+      "check": "recursive_256: own cap within the global cap",
+      "status": "ok",
+      "detail": "256 <= 256"
+    },
+    {
+      "check": "recursive_256: zero overlap",
+      "status": "ok",
+      "detail": "0"
+    },
+    {
+      "check": "semantic__strong: cap holds",
+      "status": "ok",
+      "detail": "max=256 <= 256"
+    },
+    {
+      "check": "semantic__strong: own cap within the global cap",
+      "status": "ok",
+      "detail": "256 <= 256"
+    },
+    {
+      "check": "semantic__strong: zero overlap",
+      "status": "ok",
+      "detail": "0"
+    },
+    {
+      "check": "semantic__weak: cap holds",
+      "status": "ok",
+      "detail": "max=256 <= 256"
+    },
+    {
+      "check": "semantic__weak: own cap within the global cap",
+      "status": "ok",
+      "detail": "256 <= 256"
+    },
+    {
+      "check": "semantic__weak: zero overlap",
+      "status": "ok",
+      "detail": "0"
+    },
+    {
+      "check": "all chunkers ran over the same corpus",
+      "status": "ok",
+      "detail": "[4274]"
+    },
+    {
+      "check": "eight indexes",
+      "status": "ok",
+      "detail": "8 found"
+    },
+    {
+      "check": "fixed_128__strong: vectors == chunks",
+      "status": "ok",
+      "detail": "143674 vs 143674"
+    },
+    {
+      "check": "fixed_128__weak: vectors == chunks",
+      "status": "ok",
+      "detail": "143674 vs 143674"
+    },
+    {
+      "check": "fixed_256__strong: vectors == chunks",
+      "status": "ok",
+      "detail": "72910 vs 72910"
+    },
+    {
+      "check": "fixed_256__weak: vectors == chunks",
+      "status": "ok",
+      "detail": "72910 vs 72910"
+    },
+    {
+      "check": "recursive_256__strong: vectors == chunks",
+      "status": "ok",
+      "detail": "92567 vs 92567"
+    },
+    {
+      "check": "recursive_256__weak: vectors == chunks",
+      "status": "ok",
+      "detail": "92567 vs 92567"
+    },
+    {
+      "check": "semantic__strong__strong: vectors == chunks",
+      "status": "ok",
+      "detail": "134289 vs 134289"
+    },
+    {
+      "check": "semantic__weak__weak: vectors == chunks",
+      "status": "ok",
+      "detail": "93408 vs 93408"
+    },
+    {
+      "check": "all 16 runs present",
+      "status": "ok",
+      "detail": "16 found, missing none"
+    },
+    {
+      "check": "fixed_128__strong__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__strong__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "fixed_128__strong__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_128__strong__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__strong__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "fixed_128__strong__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_128__weak__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__weak__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "fixed_128__weak__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_128__weak__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__weak__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "fixed_128__weak__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_256__strong__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__strong__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "fixed_256__strong__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_256__strong__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__strong__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "fixed_256__strong__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_256__weak__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__weak__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "fixed_256__weak__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "fixed_256__weak__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__weak__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "fixed_256__weak__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "recursive_256__strong__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__strong__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "recursive_256__strong__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "recursive_256__strong__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__strong__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "recursive_256__strong__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "recursive_256__weak__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__weak__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "recursive_256__weak__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "recursive_256__weak__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__weak__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "recursive_256__weak__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "semantic__strong__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__strong__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=1000 <= 1000"
+    },
+    {
+      "check": "semantic__strong__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "semantic__strong__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__strong__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "semantic__strong__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "semantic__weak__b1000: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__weak__b1000: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: budget column == 1000",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: budget never exceeded",
+      "status": "ok",
+      "detail": "max=999 <= 1000"
+    },
+    {
+      "check": "semantic__weak__b1000: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "semantic__weak__b2500: 800 rows",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__weak__b2500: test split only",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: budget column == 2500",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: budget never exceeded",
+      "status": "ok",
+      "detail": "max=2500 <= 2500"
+    },
+    {
+      "check": "semantic__weak__b2500: candidate list <= 64",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: chunk_ids length == n_chunks_used",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: no chunk selected twice",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: selected chunks in descending score order",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: stored metrics == recomputed",
+      "status": "ok",
+      "detail": "all rows agree"
+    },
+    {
+      "check": "every run scored the identical question sequence",
+      "status": "ok",
+      "detail": "1 distinct sequence(s) -- paired tests require 1"
+    },
+    {
+      "check": "fixed_128__strong__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__strong__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "fixed_128__strong__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__strong__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__strong__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "fixed_128__weak__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__weak__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "fixed_128__weak__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_128__weak__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_128__weak__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "fixed_256__strong__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__strong__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "fixed_256__strong__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__strong__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__strong__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "fixed_256__weak__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__weak__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "fixed_256__weak__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "fixed_256__weak__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "fixed_256__weak__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "recursive_256__strong__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__strong__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "recursive_256__strong__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__strong__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__strong__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "recursive_256__weak__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__weak__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "recursive_256__weak__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "recursive_256__weak__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "recursive_256__weak__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "semantic__strong__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__strong__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "semantic__strong__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__strong__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__strong__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "semantic__weak__b1000: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b1000: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__weak__b1000: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=True, expected=True"
+    },
+    {
+      "check": "semantic__weak__b2500: summary means reproduce",
+      "status": "ok",
+      "detail": ""
+    },
+    {
+      "check": "semantic__weak__b2500: summary n == 800",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "semantic__weak__b2500: generated flag matches GENERATION_BUDGETS",
+      "status": "ok",
+      "detail": "generated=False, expected=False"
+    },
+    {
+      "check": "results_wide.csv reproduces from the raw runs",
+      "status": "ok",
+      "detail": "16 rows checked"
+    },
+    {
+      "check": "interaction == weak effect minus strong effect",
+      "status": "ok",
+      "detail": "-0.0013 - -0.0138 = 0.0125 vs 0.0125"
+    },
+    {
+      "check": "weak effect reproduces from raw means",
+      "status": "ok",
+      "detail": "-0.0013 vs -0.0013"
+    },
+    {
+      "check": "strong effect reproduces from raw means",
+      "status": "ok",
+      "detail": "-0.0137 vs -0.0138"
+    },
+    {
+      "check": "interaction used all 800 questions",
+      "status": "ok",
+      "detail": "800"
+    },
+    {
+      "check": "interaction MDE reproduces from raw runs",
+      "status": "ok",
+      "detail": "0.0556 vs 0.0556"
+    },
+    {
+      "check": "every contrast is fully paired",
+      "status": "ok",
+      "detail": "n values [np.int64(800)]"
+    },
+    {
+      "check": "every contrast reports an MDE",
+      "status": "ok",
+      "detail": "max MDE 0.0439"
+    },
+    {
+      "check": "diff == mean_a - mean_b in every row",
+      "status": "ok",
+      "detail": "max drift 1.00e-04 (rounding only)"
+    }
+  ]
+}

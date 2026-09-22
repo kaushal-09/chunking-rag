@@ -1,0 +1,9 @@
+{
+  "chunkset_id": "semantic__strong",
+  "embedder_key": "strong",
+  "model_name": "BAAI/bge-base-en-v1.5",
+  "dim": 768,
+  "n_vectors": 134289,
+  "backend": "faiss",
+  "chunks_path": "data/chunks/semantic__strong.jsonl"
+}

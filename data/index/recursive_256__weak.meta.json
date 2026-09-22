@@ -1,0 +1,9 @@
+{
+  "chunkset_id": "recursive_256",
+  "embedder_key": "weak",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dim": 384,
+  "n_vectors": 92567,
+  "backend": "faiss",
+  "chunks_path": "data/chunks/recursive_256.jsonl"
+}

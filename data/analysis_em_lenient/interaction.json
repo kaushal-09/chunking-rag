@@ -1,0 +1,49 @@
+{
+  "metric": "em_lenient",
+  "budget": 1000,
+  "pair": [
+    "semantic",
+    "fixed_128"
+  ],
+  "weak_effect": {
+    "diff": -0.0075,
+    "ci": [
+      -0.0387,
+      0.0238
+    ],
+    "p": 0.659,
+    "mde": 0.0443
+  },
+  "strong_effect": {
+    "diff": -0.01,
+    "ci": [
+      -0.04,
+      0.0187
+    ],
+    "p": 0.5342,
+    "mde": 0.0417
+  },
+  "interaction": {
+    "difference_in_differences": 0.0025,
+    "ci": [
+      -0.0387,
+      0.0437
+    ],
+    "p": 0.9294,
+    "significant": false,
+    "n": 800,
+    "mde": 0.0584
+  },
+  "descriptive_spread_max_minus_min": {
+    "strong": {
+      "best": "recursive_256",
+      "worst": "semantic",
+      "spread": 0.0312
+    },
+    "weak": {
+      "best": "recursive_256",
+      "worst": "semantic",
+      "spread": 0.0187
+    }
+  }
+}

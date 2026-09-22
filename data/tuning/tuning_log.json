@@ -1,0 +1,308 @@
+[
+  {
+    "target": "recursive_256",
+    "chunker": "recursive_256",
+    "param": "min_fill_ratio",
+    "value": 0.5,
+    "objective_answer_recall": 0.8812,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.85,
+          "page_hit": 0.955,
+          "tokens_used_mean": 903.9
+        },
+        "2500": {
+          "answer_recall": 0.9,
+          "page_hit": 0.99,
+          "tokens_used_mean": 2396.5
+        },
+        "mean_answer_recall": 0.875,
+        "n_chunks": 106801
+      },
+      "strong": {
+        "1000": {
+          "answer_recall": 0.86,
+          "page_hit": 0.96,
+          "tokens_used_mean": 906.5
+        },
+        "2500": {
+          "answer_recall": 0.915,
+          "page_hit": 0.975,
+          "tokens_used_mean": 2403.5
+        },
+        "mean_answer_recall": 0.8875,
+        "n_chunks": 106801
+      }
+    },
+    "seconds": 15505.8
+  },
+  {
+    "target": "recursive_256",
+    "chunker": "recursive_256",
+    "param": "min_fill_ratio",
+    "value": 0.75,
+    "objective_answer_recall": 0.8838,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.845,
+          "page_hit": 0.94,
+          "tokens_used_mean": 894.0
+        },
+        "2500": {
+          "answer_recall": 0.895,
+          "page_hit": 0.98,
+          "tokens_used_mean": 2391.2
+        },
+        "mean_answer_recall": 0.87,
+        "n_chunks": 92568
+      },
+      "strong": {
+        "1000": {
+          "answer_recall": 0.88,
+          "page_hit": 0.96,
+          "tokens_used_mean": 894.0
+        },
+        "2500": {
+          "answer_recall": 0.915,
+          "page_hit": 0.975,
+          "tokens_used_mean": 2389.1
+        },
+        "mean_answer_recall": 0.8975,
+        "n_chunks": 92568
+      }
+    },
+    "seconds": 7966.3
+  },
+  {
+    "target": "recursive_256",
+    "chunker": "recursive_256",
+    "param": "min_fill_ratio",
+    "value": 1.0,
+    "objective_answer_recall": 0.8813,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.825,
+          "page_hit": 0.935,
+          "tokens_used_mean": 889.5
+        },
+        "2500": {
+          "answer_recall": 0.91,
+          "page_hit": 0.985,
+          "tokens_used_mean": 2379.8
+        },
+        "mean_answer_recall": 0.8675,
+        "n_chunks": 89228
+      },
+      "strong": {
+        "1000": {
+          "answer_recall": 0.875,
+          "page_hit": 0.96,
+          "tokens_used_mean": 885.5
+        },
+        "2500": {
+          "answer_recall": 0.915,
+          "page_hit": 0.975,
+          "tokens_used_mean": 2387.1
+        },
+        "mean_answer_recall": 0.895,
+        "n_chunks": 89228
+      }
+    },
+    "seconds": 7751.7
+  },
+  {
+    "target": "semantic__weak",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 70,
+    "objective_answer_recall": 0.855,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.83,
+          "page_hit": 0.95,
+          "tokens_used_mean": 919.5
+        },
+        "2500": {
+          "answer_recall": 0.88,
+          "page_hit": 0.99,
+          "tokens_used_mean": 2419.3
+        },
+        "mean_answer_recall": 0.855,
+        "n_chunks": 158399
+      }
+    },
+    "seconds": 8606.8
+  },
+  {
+    "target": "semantic__strong",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 70,
+    "objective_answer_recall": 0.88,
+    "per_embedder": {
+      "strong": {
+        "1000": {
+          "answer_recall": 0.84,
+          "page_hit": 0.97,
+          "tokens_used_mean": 922.2
+        },
+        "2500": {
+          "answer_recall": 0.92,
+          "page_hit": 0.985,
+          "tokens_used_mean": 2417.9
+        },
+        "mean_answer_recall": 0.88,
+        "n_chunks": 158386
+      }
+    },
+    "seconds": 38232.8
+  },
+  {
+    "target": "semantic__weak",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 80,
+    "objective_answer_recall": 0.835,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.805,
+          "page_hit": 0.95,
+          "tokens_used_mean": 904.4
+        },
+        "2500": {
+          "answer_recall": 0.865,
+          "page_hit": 0.985,
+          "tokens_used_mean": 2401.9
+        },
+        "mean_answer_recall": 0.835,
+        "n_chunks": 134412
+      }
+    },
+    "seconds": 1465.0
+  },
+  {
+    "target": "semantic__strong",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 80,
+    "objective_answer_recall": 0.8875,
+    "per_embedder": {
+      "strong": {
+        "1000": {
+          "answer_recall": 0.86,
+          "page_hit": 0.97,
+          "tokens_used_mean": 909.3
+        },
+        "2500": {
+          "answer_recall": 0.915,
+          "page_hit": 0.98,
+          "tokens_used_mean": 2405.7
+        },
+        "mean_answer_recall": 0.8875,
+        "n_chunks": 134295
+      }
+    },
+    "seconds": 10126.3
+  },
+  {
+    "target": "semantic__weak",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 90,
+    "objective_answer_recall": 0.8475,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.82,
+          "page_hit": 0.95,
+          "tokens_used_mean": 897.0
+        },
+        "2500": {
+          "answer_recall": 0.875,
+          "page_hit": 0.98,
+          "tokens_used_mean": 2402.1
+        },
+        "mean_answer_recall": 0.8475,
+        "n_chunks": 107535
+      }
+    },
+    "seconds": 1194.2
+  },
+  {
+    "target": "semantic__strong",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 90,
+    "objective_answer_recall": 0.8825,
+    "per_embedder": {
+      "strong": {
+        "1000": {
+          "answer_recall": 0.855,
+          "page_hit": 0.95,
+          "tokens_used_mean": 887.6
+        },
+        "2500": {
+          "answer_recall": 0.91,
+          "page_hit": 0.975,
+          "tokens_used_mean": 2385.2
+        },
+        "mean_answer_recall": 0.8825,
+        "n_chunks": 107452
+      }
+    },
+    "seconds": 8209.2
+  },
+  {
+    "target": "semantic__weak",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 95,
+    "objective_answer_recall": 0.8675,
+    "per_embedder": {
+      "weak": {
+        "1000": {
+          "answer_recall": 0.845,
+          "page_hit": 0.94,
+          "tokens_used_mean": 878.8
+        },
+        "2500": {
+          "answer_recall": 0.89,
+          "page_hit": 0.98,
+          "tokens_used_mean": 2382.8
+        },
+        "mean_answer_recall": 0.8675,
+        "n_chunks": 93407
+      }
+    },
+    "seconds": 1051.8
+  },
+  {
+    "target": "semantic__strong",
+    "chunker": "semantic",
+    "param": "percentile",
+    "value": 95,
+    "objective_answer_recall": 0.8725,
+    "per_embedder": {
+      "strong": {
+        "1000": {
+          "answer_recall": 0.835,
+          "page_hit": 0.96,
+          "tokens_used_mean": 868.8
+        },
+        "2500": {
+          "answer_recall": 0.91,
+          "page_hit": 0.98,
+          "tokens_used_mean": 2378.7
+        },
+        "mean_answer_recall": 0.8725,
+        "n_chunks": 93287
+      }
+    },
+    "seconds": 7161.9
+  }
+]
